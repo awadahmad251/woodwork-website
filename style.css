@@ -1,0 +1,524 @@
+.hero{
+        background:linear-gradient(260deg, black, grey);
+}
+body {
+      padding: 0;
+      margin: 0;
+      background-color: gray;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/homebg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* navbar */
+.navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+}
+.navbar ul {
+      display: flex;
+      list-style: none;
+}
+.navbar ul li a {
+      text-decoration: none;
+      margin: 16px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+}
+.navbar ul li a:hover{
+        text-decoration: underline;
+        font-size: 24px;
+}
+.navbar h1 {
+      font-size: 30px;
+      margin-left: 20px;
+      color: white;
+      font-weight: bold;
+      line-height: 1.2;
+}
+
+/* home */
+#home {
+      background: linear-gradient(120deg, darkred, black);
+      margin-left: 15%;
+      height: 100vh;
+      border-radius: 20px;
+      position: relative; /* keeps images inside */
+      overflow: hidden;
+}
+.details {
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+}
+.details span {
+      font-size: 60px;
+      margin: 0;
+      line-height: 1.2;
+      font-weight: bold;
+}
+.details p {
+      font-size: 20px;
+      margin: 20px 0;
+      line-height: 1.5;
+      color: goldenrod;
+}
+.details button {
+      width: 120px;
+      font-size: larger;
+      border-radius: 25px;
+      cursor: pointer;
+      background-color: lightsteelblue;
+      color: white;
+      font-weight: bolder;
+}
+
+/* images inside home */
+.images {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 20px;
+      padding-right: 5%;
+}
+.images img {
+      width: 200px;
+      height: 150px;
+      border-radius: 20px;
+      object-fit: cover;
+}
+.images #img2 {
+      padding-right: 40%;
+}
+
+/* Gallery Section */
+#gallery {
+      background: linear-gradient(260deg, black, grey);
+      padding: 60px 20px;
+      text-align: center;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin-top: 60px;
+}
+#gallery h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 50px;
+      letter-spacing: 2px;
+}
+.types {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 50px;
+      flex-wrap: nowrap;
+}
+.types .type,
+.types .type2,
+.types .type3 {
+      background: #1a1a1a;
+      border-radius: 20px;
+      padding: 25px;
+      width: 250px;
+      text-align: center;
+}
+.types img {
+      width: 100%;
+      height: 150px;
+      border-radius: 15px;
+      object-fit: cover;
+      margin-bottom: 15px;
+}
+.types h3 {
+      font-size: 22px;
+      margin: 10px 0;
+      color: #fff;
+}
+.types ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+}
+.types ul li {
+      font-size: 16px;
+      margin: 8px;
+}
+.types .type:hover,
+.types .type2:hover,
+.types .type3:hover {
+      transform: translateY(-9px) scale(1.03);
+      transition: all 0.3s ease;
+      cursor: pointer;
+}
+
+/* our work */
+.work h1 {
+      margin-top: 60px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.galleryimages img {
+      padding: 20px;
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 40px;
+}
+
+/* consult */
+.consult h1 {
+      margin-top: 60px;
+}
+.content img {
+      width: 300px;
+      height: 200px;
+      border-radius: 40px;
+}
+.content ul {
+      list-style: none;
+      font-size: large;
+      margin: 6px;
+      line-height: 1.6;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content button {
+      width: 300px;
+      font-size: large;
+      background-color: skyblue;
+      color: white;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+}
+.content button:hover {
+      transform: scale(1.08);
+      background: linear-gradient(90deg, blue, lightsteelblue);
+}
+
+/* prices */
+#priceforservices {
+      background: linear-gradient(260deg, black, grey);
+      padding: 60px 20px;
+      text-align: center;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin-top: 60px;
+}
+.price-img img {
+      width: 300px;
+      height: 200px;
+      border-radius: 20px;
+      margin: 20px;
+}
+.price-img img:hover {
+      transform: translateY(-8px) scale(1.03);
+      cursor: pointer;
+}
+#priceforservices h1 {
+      font-size: 42px;
+      text-decoration: underline;
+      font-weight: bolder;
+      line-height: 1.6;
+      letter-spacing: 2px;
+      margin-top: 4px;
+}
+
+/* about */
+#aboutus {
+  background: linear-gradient(120deg, darkred, black);
+  padding: 60px 10%;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin-top: 60px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  text-align:left;
+  margin-right: 15%;
+}
+#aboutus h1 {
+  font-size: 42px;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  margin-left: 15%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about-content p{
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 400px;
+      margin-left: 15%;
+}
+.ourwork {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+  justify-content: flex-end;
+}
+.ourwork img {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.ourwork img:hover {
+  transform: scale(1.05);
+}
+
+/* contact */
+#contact{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      background: linear-gradient(260deg, black, grey);
+      height: 100vh;
+      margin-top: 60px;
+}
+#contact h1{
+      font-size: 42px;
+      line-height: 1.6;
+      letter-spacing: 2px;
+}
+form input{
+        padding: 8px;
+        margin: 12px;
+        width: 250px;
+        border-radius: 40px;
+        font-size: large;
+}
+form textarea{
+        padding: 8px;
+        margin: 12px;
+        border-radius: 8px;
+        font-size: large;
+}
+form button{
+        padding: 8px;
+        margin: 12px;
+        width: 150px;
+        border-radius: 16px;
+        color: white;
+        background-color: lightskyblue;
+        cursor: pointer;
+        font-size: large;
+        font-weight: bold;
+}
+form button:hover{
+      transform: translateY(-9px) scale(1.03);
+}
+
+/* footer */
+footer{
+      display: flex;
+      justify-content:space-evenly;
+      align-items: flex-start;
+      background:linear-gradient(260deg, black, grey);
+      padding: 10px;
+}
+footer h1{
+      font-size: 43px;
+}
+footer p{
+      font-size: 22px;
+      padding-top: 20px;
+      line-height: 1.6;
+      letter-spacing: 3px;
+}
+
+/* ================== MEDIA QUERIES ================== */
+@media (max-width: 992px) {
+  /* Navbar */
+  .navbar ul li a {
+    font-size: 16px;
+    margin: 8px;
+  }
+  .navbar h1 {
+    font-size: 24px;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Home */
+  #home {
+    height: auto;
+    padding-bottom: 40px;
+    margin-left: 0;   /* ✅ fix overflow */
+    border-radius: 0;
+  }
+  .images {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 15px;
+  }
+  .images img {
+    width: 150px;
+    height: auto;
+  }
+
+  /* Gallery types fix */
+  .types {
+    flex-wrap: wrap; /* ✅ allow wrapping */
+    gap: 20px;
+  }
+  .types .type,
+  .types .type2,
+  .types .type3 {
+    width: 100%;     /* ✅ full width on smaller */
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* Our work */
+  .galleryimages img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  /* Consult fix */
+  .consult .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  /* Price list fix */
+  .price-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .price-img img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  /* About section */
+  .about-content p {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .ourwork {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 0 0;
+  }
+  .ourwork img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  /* Footer fix */
+  footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+  }
+  footer h1 {
+    font-size: 28px;
+  }
+  footer p {
+    font-size: 16px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Navbar */
+  .navbar ul li a {
+    margin: 6px;
+    font-size: 14px;
+  }
+
+  /* Home text */
+  .details span {
+    font-size: 36px;
+  }
+  .details p {
+    font-size: 16px;
+  }
+  .details button {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  /* Home images stacked */
+  .images {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .images img {
+    width: 90%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  /* Gallery types */
+  .types {
+    flex-direction: column;
+    align-items: center;
+  }
+  .types .type,
+  .types .type2,
+  .types .type3 {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  /* Consult section */
+  .content ul {
+    font-size: 14px;
+  }
+  .content button {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  /* Prices */
+  .price-img img {
+    width: 90%;
+    max-width: 250px;
+  }
+
+  /* Footer tighter */
+  footer h1 {
+    font-size: 24px;
+  }
+  footer p {
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+  }
+}
